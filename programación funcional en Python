@@ -1,0 +1,15 @@
+# Ejemplo de función map
+numeros = [1, 2, 3, 4, 5]
+cuadrados = list(map(lambda x: x**2, numeros))
+print(cuadrados)
+
+# Ejemplo de función filter
+numeros = [1, 2, 3, 4, 5]
+pares = list(filter(lambda x: x % 2 == 0, numeros))
+print(pares)
+
+# Ejemplo de función reduce
+from functools import reduce
+numeros = [1, 2, 3, 4, 5]
+suma = reduce(lambda x, y: x + y, numeros)
+print(suma)
