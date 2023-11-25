@@ -1,0 +1,23 @@
+// Importar la clase Thread
+import java.lang.Thread;
+
+// Definir una clase que extienda Thread
+class <link>MiHilo</link> extends Thread {
+    public void run() {
+        // Código que se ejecutará en el hilo
+        System.out.println("¡Hola desde el hilo!");
+    }
+}
+
+public class <link>ProgramaMultihilo</link> {
+    public static void main(String[] args) {
+        // Crear una instancia de <link>MiHilo</link>
+        <link>MiHilo</link> hilo = new <link>MiHilo</link>();
+        
+        // Iniciar el hilo
+        hilo.start();
+        
+        // Código que se ejecutará en el hilo principal
+        System.out.println("¡Hola desde el hilo principal!");
+    }
+}
